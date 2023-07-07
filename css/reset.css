@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  outline: none;
+  background: none;
+  color: currentColor;
+  line-height: normal;
+  text-decoration: none;
+  box-sizing: border-box;
+  letter-spacing: normal;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=reset.css.map */
