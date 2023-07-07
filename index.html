@@ -16,6 +16,62 @@
     <title>HTML/CSS 1h Challenge - Gallery animated carousel</title>
   </head>
   <body>
+    <header class="header">
+      <h1 class="header--title">Skillex<span>.</span></h1>
 
+      <nav class="header__menu">
+        <button class="header__menu--link">Find passion</button>
+        <button class="header__menu--link">Categories</button>
+        <button class="header__menu--link">Skills</button>
+        <button class="header__menu--link">Customer</button>
+      </nav>
+
+      <nav class="header__account">
+        <button class="header__account--link">Login</button>
+        <button class="header__account--link">Free Trial</button>
+      </nav>
+    </header>
+
+    <main class="content">
+      <section class="content__intro">
+        <h1 class="content__intro__title">
+          <span class="content__intro__title--line">Watch.</span>
+          <span class="content__intro__title--line">Learn.</span>
+          <span class="content__intro__title--line">Grow.</span>
+        </h1>
+
+        <div class="content__intro__toast">
+          <span class="content__intro__toast--content">Find your passion</span>
+          <button class="content__intro__toast--action">Go</button>
+        </div>
+      </section>
+
+      <section class="content__carousel">
+        <div class="content__carousel__box" style="--avatar: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80')">
+          <span class="content__carousel__box--category"></span>
+          <h2 class="content__carousel__box--topic">Writing Course</h2>
+          <p class="content__carousel__box__amount">
+            <span class="content__carousel__box__amount--value">100</span>
+            Topics
+          </p>
+        </div>
+        <div class="content__carousel__box" style="--avatar: url('https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80')">
+          <span class="content__carousel__box--category">Writing</span>
+          <h2 class="content__carousel__box--topic">Writing Course</h2>
+          <p class="content__carousel__box__amount">
+            <span class="content__carousel__box__amount--value">100</span>
+            Topics
+          </p>
+        </div>
+        <div class="content__carousel__box" style="--avatar: url('https://images.unsplash.com/photo-1624561272659-224ea122b2e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80')">
+          <span class="content__carousel__box--category">Business</span>
+          <h2 class="content__carousel__box--topic">Business Course</h2>
+          <p class="content__carousel__box__amount">
+            <span class="content__carousel__box__amount--value">100</span>
+            Topics
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
