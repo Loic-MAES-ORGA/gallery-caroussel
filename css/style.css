@@ -1,3 +1,135 @@
+html {
+  font-size: 18px;
+}
 
+body {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background-color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  gap: 7em;
+  display: flex;
+  align-items: center;
+  padding: 1.98em 3em;
+}
+.header > * {
+  flex: 0 0 auto;
+}
+.header--title {
+  font-size: 2em;
+  font-weight: 600;
+}
+.header--title > span {
+  color: darkseagreen;
+}
+.header .general-menu {
+  gap: 2.5em;
+  display: flex;
+  align-items: center;
+}
+.header .general-menu-link {
+  line-height: 1;
+  transition: opacity 200ms ease;
+}
+.header .general-menu-link:hover {
+  opacity: 0.6;
+}
+.header__menu {
+  flex: 1 1 100%;
+}
+.header__account--link:last-child {
+  color: white;
+  border-radius: 5em;
+  background-color: black;
+  padding: 0.99em 3em;
+}
+.header__account--link:last-child:hover {
+  opacity: 0.8;
+}
+
+.content {
+  flex: 1 1 100%;
+  display: flex;
+  gap: 3em;
+  align-items: stretch;
+  padding: 0 3em 3.99em;
+}
+.content__intro {
+  display: flex;
+  flex: 0 0 30%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.content__intro__title {
+  display: flex;
+  font-size: 5em;
+  flex-direction: column;
+}
+.content__intro__title--line {
+  line-height: 1;
+  display: inline-block;
+}
+.content__intro__toast {
+  z-index: 0;
+  width: 100%;
+  flex: 0 0 auto;
+  height: 7em;
+  position: relative;
+}
+.content__intro__toast::before {
+  left: 0;
+  top: 50%;
+  z-index: -1;
+  content: "";
+  height: 100%;
+  opacity: 0.07;
+  filter: blur(2em);
+  border-radius: 50%;
+  position: absolute;
+  background-color: black;
+  transform: translateY(-25%);
+  width: calc(100% + 7em);
+}
+.content__intro__toast--content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: hsla(0deg, 0%, 0%, 0.5);
+  padding-left: 2.8em;
+  background-color: whitesmoke;
+}
+.content__intro__toast--action {
+  top: 0;
+  left: 100%;
+  z-index: 9;
+  height: 100%;
+  font-size: 2em;
+  position: absolute;
+  isolation: isolate;
+  aspect-ratio: 1/1;
+  background-color: darkseagreen;
+}
+.content__intro__toast--action::before {
+  inset: 0;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  transform: scaleY(0);
+  background-color: gold;
+  transform-origin: bottom;
+  transition: transform 300ms ease;
+}
+.content__intro__toast--action:hover::before {
+  transform: none;
+}
+.content__carousel {
+  background: red;
+}
 
 /*# sourceMappingURL=style.css.map */
